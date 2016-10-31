@@ -1,0 +1,45 @@
+/*column 分栏*/
+.boxColumn .container{
+    -webkit-column-count: 3;
+    column-rule-style: dashed;
+}
+
+.boxColumn .container img {
+    width: 100%;
+    height: 200px;
+    margin: 0 10px 10px;
+}
+/*垂直居中*/
+.center{
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align: center;
+    height: 300px;
+    width: 300px;
+    background: #ffff00;
+}
+/*弹性盒子模型*/
+.con{
+    display:-webkit-flex;
+    background: green;
+    -webkit-flex-direction:column ;
+    height: 500px;
+}
+.one{
+    height: 100px;
+    background: #ffff00;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+}
+.tow{
+    height: 100px;
+    background: #00ffff;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+}
+.three{
+    height: 200px;
+    background: red;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+}
