@@ -1,0 +1,504 @@
+/*PC端页面*/
+
+/*头部*/
+.nav{
+	width: 100%;
+	height: 51px;
+}
+.nav .navx{
+	width: 560px;
+	height: 51px;
+	float: right;
+	margin-right: 20px;
+}
+.nav .navx ul{
+	width: 480px;
+	height: 24px;
+	float: left;
+	margin-top: 13px;
+}
+.nav .navx ul li{
+	width: 60px;
+	height: 24px;
+	display: inline-block;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: underline;
+	float: left;
+}
+.nav .navx ul li a{
+	color: #000;
+}
+.nav .navx ul li a:hover{color:#3385C5;
+text-decoration: underline;}
+.nav .navx ul li .strong{
+	font-weight: bold;
+}
+.nav .navx .brl{
+	width: 60px;
+	height: 24px;
+	float: right;
+	background-color: #3388FF;
+	text-align: center;
+	margin-top: 13px;
+	line-height: 24px;
+}
+.nav .navx .brl a{
+	color: #fff;
+}
+/*百度图片*/
+.baidu{
+	width: 270px;
+	height: 132px;
+	margin: 0 auto;
+}
+.baidu img{
+	width: 270px;
+	height: 129px;
+	margin-top: 3px;
+}
+/*输入框*/
+.fm{
+	width: 641px;
+	height: 36px;
+	margin:0 auto;
+	margin-top: 20px;
+	display: block;
+
+}
+.fm .srdr{
+	width: 641px;
+	height: 36px;
+	position: relative;
+	border: 1px solid #aaa;
+	margin-top: 80px;
+}
+.fm .srdr .sr{
+	width: 500px;
+	height: 22px;
+	float: left;
+	border: none;
+	position:absolute;
+	top: 7px;
+	left: 10px;
+	background: url(../imgs/xj.png) no-repeat;
+	background-position:right 5px;
+}
+
+/*百度一下*/
+.fm .srdr button{
+	width: 100px;
+	height: 36px;
+	background: #3385FF;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	position: absolute;
+	right: 0;
+}
+/*页脚*/
+.yj{
+	width:640px;height:62px;
+	margin:0 auto;
+	margin-top:280px;
+}
+.bdnm{
+	float:left;
+	margin-left: 20px;
+}
+.tel_bd_img{
+	float:left;
+	width:62px;height:62px;
+	background:url(../imgs/erweima.png) no-repeat;
+}
+.bdnm_img{
+	float:left;
+	width:62px;height:62px;
+	background:url(../imgs/erweima2.png) no-repeat;
+}
+.bd_text{
+	width:65px;height:62px;
+	float:left;line-height: 24px;
+	margin-left: 8px;
+}
+.bd_text p:nth-child(1){
+	font-weight: bold;
+	font-size: 12px;
+	color:#896666;
+	margin-top: 6px;
+}
+.bd_text p:nth-child(2){
+	font-size: 12px;
+	color:#999999;
+}
+.content {
+	float:left;
+	height:62px;width:330px;
+	font-size: 12px;
+	margin-left: 15px;
+	color:#999999;
+	margin-top:-4px;
+}
+.content p{
+	height:20px;width:330px;
+	text-align: left;
+	margin-bottom: 4px;
+	line-height: 20px;
+}
+.content a{
+	text-decoration:underline;
+	color:#999999;
+}
+.content_1 a{
+	margin-right: 16px;
+}
+.icon{
+	display: inline-block;
+	width:14px;height:17px;
+	background-color:red;
+	background:url(../imgs/xuebi.png) no-repeat;
+	background-position:-600px -96px;
+}
+.jgw{
+	display: inline-block;
+	width:14px;height:17px;
+	background-color:red;
+	background:url(../imgs/xuebi.png) no-repeat;
+	background-position:-623px -96px;
+}
+.mobile{display: none;}
+/*媒体查询*/
+@media (max-width: 800px){
+	.mobile{
+		display: block;
+	}
+	.container{
+		display: none;
+	}
+}
+/*手机端页面*/
+.mobile{
+	width: 100%;
+	height: auto;
+}
+/*顶部*/
+.m-top{
+	width: 100%;
+	height: 271px;
+	background-color: #F1F1F1;
+	color:#999999;
+}
+/*天气图标*/
+.mark {
+	font-weight: bold;
+	margin-left: 5px;
+	float: left;
+}
+/*度数*/
+.degree{
+	font-size: 24px;
+	float: left;
+}
+/*城市和空气*/
+.city{
+	float: left;
+	line-height: 11px;
+	margin-top: 5px;
+}
+/*个人和换肤*/
+.grhf{
+	float: right;
+	margin-right: 10px;
+}
+/*来自太空的信*/
+.letter{
+	width: 66px;
+	height: 21px;
+	background-color: #fff;
+	margin-right: 10px;
+	box-shadow: 1px 1px 1px #d8d8d8;
+	position: relative;
+}
+.letter::after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+	border-left-color: #fff;
+	position: absolute;
+	top: 3px;
+	right: -10px;
+}
+
+.personal{
+	margin-right: 20px;
+}
+/*百度图片*/
+
+.bd_img{
+	display: inline-block;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	margin-top: 20px;
+}
+.bd_img img{
+	width: 40%;
+	height: 55px;
+}
+/*输入、语音、百度一下*/
+.m-fm{
+	margin: 10px 10px 0;
+	height: 42px;
+	border: 1px solid #949494;
+	border-right: none;
+	position: relative;
+}
+/*输入框*/
+.m-fm .m-input{
+	width: 100%;
+	height: 40px;
+	border: none;
+	position: absolute;
+	top: 1px;
+	left: 0;
+}
+/*语音*/
+.voice{
+	width: 31px;
+	height: 39px;
+	position: absolute;
+	right: 82px;
+	top: 1px;
+	background-color: #fff;
+}
+.voice i{
+	font-size: 24px;
+	line-height: 39px;
+	text-align: center;
+}
+/*百度一下*/
+.m-btn{
+	width: 82px;
+	height: 42px;
+	background: #38f;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/*导航*/
+.m-nav{
+	margin: 10px 10px 0;
+	height: 42px;
+	line-height: 22px;
+}
+.m-nav a{
+	width: 16%;
+	height: 42px;
+	float: left;
+	color: #666;
+	text-align: center;
+}
+.m-nav a span{
+	display: block;
+}
+/*推荐和关注*/
+.attention{
+	width: 100%;
+	height: 41px;
+	margin: 0 auto;
+	margin-top:20px;
+}
+.gztj{
+	width: 32%;
+	background-color: red;
+}
+.attention .gztj span{
+	width: 50%;
+	text-align: center;
+	color: #333;
+	line-height: 41px;
+	font-size: 16px;
+
+}	
+.attention span:hover{
+	color: #38f;
+	border-bottom: 1px solid #38f;
+}
+/*新闻*/
+/*上图下文*/
+.m-news{
+	width: 100%;
+	height: 171px;
+}
+.text-content{
+	width: 90%;
+	height: 37px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+.text-content h2{
+	font-size: 18px;
+	color: #333;
+	line-height: 26px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-align: left;
+}
+.pic_content{
+	width: 90%;
+	height: 81px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.pic_content .img_wrap img{
+	display:inline-block;
+	width:33%;
+	height: 81px;
+	float: left;
+	text-align: center;
+}
+.pic_content .img_wrap img{
+	height: 81px;
+}
+.pic_content span{
+	font-size: 13px;
+	color: #999;
+	margin-top: 20px;
+}
+/*左图右文*/
+.nwes-2{
+	width:90%;
+	height: 173px;
+	margin: 0 auto;
+}
+.nwes-2 .img_wrap2 img{
+	width: 33.65%;
+	height: 143px;
+	margin-top: 15px;
+	float:left;
+}
+.nwes-2 .text-content2{
+	width: 66.35%;
+	height: 51px;
+	float: left;
+	margin-top: 50px;
+}
+.nwes-2 .text-content2 a h2{
+	color: #333;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 14px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.nwes-2 .text-content2 span{
+	color: #999;
+	font-size: 13px;
+	padding-left: 14px;
+}
+/*手机端页脚*/
+.m-footer{
+	width: 100%;
+	height: 207px;
+	background-color: #f7f7f7;
+}
+/*列表*/
+.gxk42{
+	width: 100%;
+	height: 99px;
+}
+.gxk42 li{
+	width: 90%;
+	height: 33px;
+	margin: 0 auto;
+	line-height: 33px;
+}
+.gxk42 li .hot_spots{
+	display: inline-block;
+	width: 21px;
+	height: 33px;
+	line-height:33px;
+	text-align: center;
+}
+.gxk42 li .hot_spots a{
+	line-height: 33px;
+	color: #fff;
+	background-color: #ed5353;
+	font-size: 10px;
+}
+.gxk42 li .bd_browser{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	background: url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/img/w_icon2.png) no-repeat;
+	background-size: cover;
+}
+.gxk42 li a span{
+	color: #999;
+}
+.gxk42 li a{
+	color: #555;
+	font-size: 13px;
+}
+/*底层*/
+.bottom_foot{
+	width: 90%;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+/*用户反馈信息*/
+.feedback{
+	width: 95px;
+	height: 34px;
+	margin: 0 auto;
+	line-height: 34px;
+}
+.feedback a .icon-feedback{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAlUlEQVRIx+3WwQ3AIAgFUEfXg01n6EQu4hy0A2iQ/yGmiYd/fgaBkEQk7Ug68IHD4dZa/yKO6auweOfAKsw0zT9hp1w74DKrRCSctW+IgPMIG+GecF1ttCnssYu1uQ6BV5YKW+oHQVn4RlEGLgyKwplFEbh6oHRXo6jLOCGoudTaGrQ8GoZHOHplmmFmy5nO29kjEfgFKVQDsNj13egAAAAASUVORK5CYII=) no-repeat;
+	background-size: cover;
+	margin-top: 3px;
+}
+.feedback a{
+	display: inline-block;
+	color: #666;
+	font-size: 13px;
+	line-height: 34px;
+}
+/*使用百度前必读 Baidu 京ICP证030173号*/
+.bottom_foot .baidu{
+	display: block;
+	width: 100%;
+	height: 20px;
+	color: #999;
+	text-align: center;
+}
+/*京公网安备*/
+.bottom_foot .For_the_record{
+	display: block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #999;
+}
+.For_the_record .emblem{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(https://m.baidu.com/static/index/plus/public/icon_police.png) no-repeat;
+	background-size: cover;
+}

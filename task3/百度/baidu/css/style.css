@@ -1,0 +1,724 @@
+﻿/*PC端*/
+body, p, form, div,a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    height: 100%;
+}
+
+.wrapper {
+    min-width: 810px;
+    height: 100%;
+    position: relative;
+    min-height: 100%
+}
+
+/*头部，超链接*/
+.wrapper {
+    height: 100%;
+    min-height: 600px
+}
+
+.header {
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px
+}
+
+.wrapper .top {
+    width: 445px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 19px 0 5px 0;
+    line-height: 24px;
+    font-size: 13px;
+    z-index: 2;
+}
+
+.top a.nav {
+    float: left;
+    color: #333333;
+    margin-left: 20px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.top a.loginset {
+    float: left;
+    color: #333333;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.top a.nav:hover, .top a.loginset:hover {
+    color: #00c;
+}
+
+.top a.morepd {
+    display: block;
+    position: absolute;
+    right: 12px;
+    width: 60px;
+    height: 24px;
+    background: #38f;
+    color: #fff;
+    text-align: center;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.baidu{
+    width: 270px;
+    height: 132px;
+    margin: 0 auto;
+}
+.baidu img{
+    width: 270px;
+    height: 129px;
+    margin-top: 30px;
+}
+/*输入框*/
+.fm{
+    width: 641px;
+    height: 36px;
+    margin:0 auto;
+    display: block;
+
+}
+.fm .srdr{
+    width: 641px;
+    height: 36px;
+    position: relative;
+    margin-top: 80px;
+}
+.fm .srdr .sr{
+    width: 530px;
+    height: 32px;
+    padding-left: 10px;
+    float: left;
+    border: 1px solid #b6b6b6;
+    border-right: none;
+    outline: 0;
+}
+.fm .srdr .sr:hover{
+    border: 1px solid #b3b3b3;
+}
+.fm .srdr .sr:focus{
+    border: 1px solid #3388FF;
+}
+.fm .srdr span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    background: url(../images/1.png) no-repeat;
+}
+.fm .srdr span:hover{
+    background: url(../images/1.png) no-repeat center -20px;
+}
+/*百度一下*/
+.fm .srdr button{
+    width: 100px;
+    height: 36px;
+    background: #3385FF;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.fm .srdr button:hover{
+    background: #317ef3;
+}
+.setmenu{
+    width: 70px;
+    font-size: 12px;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    position: absolute;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    top: 48px;
+    right: 70px;
+    margin-top:-1px;
+    z-index: 10;
+    display: none;
+}
+
+.setmenu a{
+    background: #ffffff;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0 9px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.setmenu a:hover{
+    color: #ffffff;
+    background:#3385ff ;
+}
+
+.setmenu .triangle-a{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.setmenu .setnull{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.setmenu .triangle-a em{
+    border-bottom: 5px solid #d1d1d1;
+    top: -1px;
+}
+.setmenu .triangle-a i{
+     border-bottom:5px solid #fff;
+     top: 0;
+ }
+
+ .triangle-a em, .triangle-a i{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+}
+
+/*更多产品*/
+.productmenu{
+    min-height: 100%;
+    height: 100%;
+    display: none;
+    opacity: 1;
+    width: 85px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 12;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.productmenu .pd-title{
+    text-align: center;
+    font-size: 13px;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: default;
+}
+
+.productmenu .pd-container{
+    height: 100%;
+    display: block;
+}
+
+.productmenu .pd-scollcontainer{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pd-scollcontainer a{
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    overflow: hidden;
+    color: #666;
+}
+
+.pd-scollcontainer a span{
+    background: url("../images/imgitem.png") no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    cursor: pointer;
+}
+
+.pd-scollcontainer a span.pd-imgitem1{
+    background-position: 0 0;
+}
+
+.pd-scollcontainer a span.pd-imgitem2{
+    background-position: -36px 0;
+}
+
+.pd-scollcontainer a span.pd-imgitem3{
+    width: 40px;
+    background-position: -72px 0;
+}
+.pd-scollcontainer a span.pd-imgitem4{
+    background-position: -112px 0;
+}
+
+.pd-scollcontainer a span.pd-imgitem5{
+    background-position: -148px 0;
+}
+
+.pd-scollcontainer a span.pd-imgitem6{
+    background-position: -184px 0;
+}
+.pd-scollcontainer a span.pd-imgitem7{
+    background-position: -220px 0;
+}
+
+.productmenu .pd-all{
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.pd-all a{
+    color: #666666;
+    text-decoration: none;
+}
+/*页脚部分*/
+.tail{
+    width:640px;height:62px;
+    margin:0 auto;
+    margin-top:-150px;
+}
+.code1{
+    float:left;
+    margin-left: 20px;
+}
+.code_img{
+    float:left;
+    width:62px;height:62px;
+    background:url(../images/erweima.png) no-repeat;
+}
+.code_img1{
+    float:left;
+    width:62px;height:62px;
+    background:url(../images/erweima2.png) no-repeat;
+}
+.code_text{
+    width:65px;height:62px;
+    float:left;line-height: 24px;
+    margin-left: 8px;
+}
+.code_text p:nth-child(1){
+    font-weight: bold;
+    font-size: 12px;
+    color:#896666;
+    font-family: "宋体";
+    margin-top: 6px;
+}
+.code_text p:nth-child(2){
+    font-size: 12px;
+    color:#999999;
+    font-family: "宋体";
+}
+/*页脚声明*/
+.statement {
+    float:left;
+    height:62px;width:330px;
+    font-size: 12px;
+    margin-left: 15px;
+    font-family: "宋体";
+    color:#999999;
+    margin-top:-4px;
+}
+.statement p{
+    height:20px;width:330px;
+    text-align: left;
+    margin-bottom: 4px;
+    line-height: 20px;
+}
+.statement a{
+    text-decoration:underline;
+    color:#999999;
+}
+.links a{
+    margin-right: 16px;
+}
+.icon{
+    display: inline-block;
+    width:14px;height:16px;
+    background-color:red;
+    background:url(../images/xuebi.png) no-repeat;
+    background-position:-600px -96px;
+}
+.Badge{
+    display: inline-block;
+    width:14px;height:16px;
+    background-color:red;
+    background:url(../images/xuebi.png) no-repeat;
+    background-position:-623px -96px;
+}
+.mobile{display: none;}
+/*媒体查询*/
+@media (max-width: 800px){
+    .mobile{
+        display: block;
+    }
+    .container{
+        display: none;
+    }
+}
+/*手机端页面*/
+.mobile{
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+}
+/*顶部*/
+.m-top{
+    width: 100%;
+    height: 271px;
+    background-color: #F1F1F1;
+    color:#999999;
+}
+/*天气图标*/
+.mark {
+    font-weight: bold;
+    margin-left: 5px;
+    float: left;
+}
+/*度数*/
+.degree{
+    font-size: 24px;
+    float: left;
+}
+/*城市和空气*/
+.city{
+    float: left;
+    line-height: 11px;
+    margin-top: 5px;
+}
+/*个人和换肤*/
+.grhf{
+    float: right;
+    margin-right: 10px;
+}
+/*来自太空的信*/
+.letter{
+    width: 66px;
+    height: 21px;
+    background-color: #fff;
+    margin-right: 10px;
+    box-shadow: 1px 1px 1px #d8d8d8;
+    position: relative;
+}
+.letter::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #fff;
+    position: absolute;
+    top: 3px;
+    right: -10px;
+}
+
+.personal{
+    margin-right: 20px;
+}
+/*百度图片*/
+
+.bd_img{
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    margin-top: 20px;
+}
+.bd_img img{
+    width: 40%;
+    height: 55px;
+}
+/*输入、语音、百度一下*/
+.m-fm{
+    margin: 10px 10px 0;
+    height: 42px;
+    position: relative;
+}
+/*输入框*/
+.m-fm .m-input{
+    width: 90%;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.m-fm .m-input:hover{
+    border: #b3b3b3;
+}
+.m-fm .m-input:focus{
+    border: 1px solid #3388FF;
+}
+/*语音*/
+.voice{
+    width: 31px;
+    height: 39px;
+    position: absolute;
+    right: 82px;
+    top: 1px;
+}
+.voice i{
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+}
+/*百度一下*/
+.m-btn{
+    width: 82px;
+    height: 40px;
+    background: #38f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*导航*/
+.m-nav{
+    margin: 10px 10px 0;
+    height: 42px;
+    line-height: 22px;
+}
+.m-nav a{
+    width: 16%;
+    height: 42px;
+    float: left;
+    color: #666;
+    text-align: center;
+}
+.m-nav a span{
+    display: block;
+}
+/*推荐和关注*/
+.attention{
+    width: 100%;
+    height: 41px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+.gztj{
+    width: 32%;
+    background-color: red;
+}
+.attention .gztj span{
+    width: 50%;
+    text-align: center;
+    color: #333;
+    line-height: 41px;
+    font-size: 16px;
+
+}
+.attention span:hover{
+    color: #38f;
+    border-bottom: 1px solid #38f;
+}
+/*新闻*/
+/*上图下文*/
+.m-news{
+    width: 100%;
+    height: 171px;
+}
+.text-content{
+    width: 90%;
+    height: 37px;
+    margin:0 auto;
+    margin-top: 20px;
+}
+.text-content h2{
+    font-size: 18px;
+    color: #333;
+    line-height: 26px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-align: left;
+}
+.pic_content{
+    width: 90%;
+    height: 81px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.pic_content .img_wrap img{
+    display:inline-block;
+    width:33%;
+    height: 81px;
+    float: left;
+    text-align: center;
+}
+.pic_content .img_wrap img{
+    height: 81px;
+}
+.pic_content span{
+    font-size: 13px;
+    color: #999;
+    margin-top: 20px;
+}
+/*左图右文*/
+.nwes-2{
+    width:90%;
+    height: 173px;
+    margin: 0 auto;
+}
+.nwes-2 .img_wrap2 img{
+    width: 33.65%;
+    height: 143px;
+    margin-top: 15px;
+    float:left;
+}
+.nwes-2 .text-content2{
+    width: 66.35%;
+    height: 51px;
+    float: left;
+    margin-top: 50px;
+}
+.nwes-2 .text-content2 a h2{
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 14px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.nwes-2 .text-content2 span{
+    color: #999;
+    font-size: 13px;
+    padding-left: 14px;
+}
+/*手机端页脚*/
+.m-footer{
+    width: 100%;
+    height: 207px;
+    background-color: #f7f7f7;
+}
+/*列表*/
+.gxk42{
+    width: 100%;
+    height: 99px;
+}
+.gxk42 li{
+    width: 90%;
+    height: 33px;
+    margin: 0 auto;
+    line-height: 33px;
+}
+.gxk42 li .hot_spots{
+    display: inline-block;
+    width: 21px;
+    height: 33px;
+    line-height:33px;
+    text-align: center;
+}
+.gxk42 li .hot_spots a{
+    line-height: 33px;
+    color: #fff;
+    background-color: #ed5353;
+    font-size: 10px;
+}
+.gxk42 li .bd_browser{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    background: url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/img/w_icon2.png) no-repeat;
+    background-size: cover;
+}
+.gxk42 li a span{
+    color: #999;
+}
+.gxk42 li a{
+    color: #555;
+    font-size: 13px;
+}
+/*底层*/
+.bottom_foot{
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*用户反馈信息*/
+.feedback{
+    width: 95px;
+    height: 34px;
+    margin: 0 auto;
+    line-height: 34px;
+}
+.feedback a .icon-feedback{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAlUlEQVRIx+3WwQ3AIAgFUEfXg01n6EQu4hy0A2iQ/yGmiYd/fgaBkEQk7Ug68IHD4dZa/yKO6auweOfAKsw0zT9hp1w74DKrRCSctW+IgPMIG+GecF1ttCnssYu1uQ6BV5YKW+oHQVn4RlEGLgyKwplFEbh6oHRXo6jLOCGoudTaGrQ8GoZHOHplmmFmy5nO29kjEfgFKVQDsNj13egAAAAASUVORK5CYII=) no-repeat;
+    background-size: cover;
+    margin-top: 3px;
+}
+.feedback a{
+    display: inline-block;
+    color: #666;
+    font-size: 13px;
+    line-height: 34px;
+}
+/*使用百度前必读 Baidu 京ICP证030173号*/
+.bottom_foot .baidu{
+    display: block;
+    width: 100%;
+    height: 20px;
+    color: #999;
+    text-align: center;
+}
+/*京公网安备*/
+.bottom_foot .For_the_record{
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #999;
+}
+.For_the_record .emblem{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(https://m.baidu.com/static/index/plus/public/icon_police.png) no-repeat;
+    background-size: cover;
+}

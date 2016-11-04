@@ -1,0 +1,54 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+/*头部样式*/
+header{
+    background-color: #FFA500;
+    height: 100px;
+}
+/*主体内容的样式*/
+article{
+    background: #87CEEB;
+    min-height: 500px;
+    overflow: hidden;
+    min-width: 450px;
+}
+/*网页底部样式*/
+footer{
+    background-color: #ff0;
+    height: 100px;
+}
+/*左侧边栏*/
+article .left{
+    background: pink;
+    float: left;
+    width: 150px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+
+}
+/*右侧边栏*/
+article .right{
+    background: #999;
+    float: left;
+    width: 100px;
+    margin-left: -100px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+/*内容区域样式*/
+article .main .inner{
+    background: #00ffff;
+    margin-left: 150px;
+    margin-right: 100px;
+    min-width: 300px;
+}
+article .main{
+    background: #FFA500;
+    float: left;
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
