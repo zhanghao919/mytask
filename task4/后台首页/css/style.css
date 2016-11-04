@@ -1,0 +1,14 @@
+﻿body{
+    overflow: hidden;
+}
+.sidebar,.content{
+    border: 1px solid #ccc;
+    margin-left: -1px;
+}
+.main{
+    margin-left: -1px;
+    margin-top: 20px;
+}
+.content tr td,th{
+    text-align: center;
+}
