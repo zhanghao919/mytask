@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin:100px auto;
+}
+
+input {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    color: #33abd4;
+    border: none;
+    outline: none;
+    line-height: 100%;
+    text-align: right;
+    font-size: 48px;
+}
+
+th {
+    height: 36px;
+    background: #00ffff;
+    font-size: 24px;
+    text-align: left;
+}
+
+td {
+    width: 80px;
+    height: 50px;
+    background-color: #606D8B;
+    border: 1px solid greenyellow;
+    margin: 8px;
+    color: white;
+    text-align: center;
+    line-height: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: darkslategrey;
+}
