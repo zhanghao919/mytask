@@ -1,0 +1,2184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程库</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+</head>
+<body>
+<!--头部-->
+<header>
+    <!--导航 logo-->
+    <div class="header_ad">
+        <div class="title-ad">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo"/>
+            </a>
+            <!--导航-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" style="color:rgb(53, 181, 88);">首页</a>
+                    </li>
+                    <li class="xueyuan">
+                        <span>职业学院</span>
+                        <i class="arrow-icon"></i>
+                        <!--内容-->
+                        <div class="zyxy">
+                            <h3>前端学院</h3>
+                            <a href="#">
+                                <i class="web-ico"></i>
+                                Web 前端工程师
+                            </a>
+                            <h3>后端学院</h3>
+                            <a href="#">
+                                <i class="py-ico"></i>
+                                Python Web工程师</a>
+                            <a href="#">
+                                <i class="go-ico"></i>
+                                Go语言工程师</a>
+                            <h3>移动学院</h3>
+                            <a href="#">
+                                <i class="ios-ico"></i>
+                                iOS工程师
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <span>会员课程</span>
+                        <i class="arrow-icon"></i>
+                        <!--会员课程下拉内容-->
+                        <div class="hykc">
+                            <a href="#">
+                                <i class="kck-ico"></i>
+                                课程库
+                            </a>
+                            <a href="#">
+                                <i class="zylj-ico"></i>
+                                职业路径图
+                                <span>9</span>
+                            </a>
+                            <a href="#">
+                                <i class="csti-ico"></i>
+                                知识体系图
+                                <span>24</span>
+                            </a>
+                            <a href="#">
+                                <i class="xlkc-ico"></i>
+                                系列课程
+                                <span>101</span>
+                            </a>
+                            <a href="#">
+                                <i class="kcbq-ico"></i>
+                                课程标签
+                                <span>4000+</span>
+                            </a>
+                            <a href="#">
+                                <i class="vip-ico"></i>
+                                VIP会员购买
+                                <span>30/月  260/年</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="community">
+                        <span>极客社区</span>
+                        <i class="arrow-icon"></i>
+                        <!--下拉内容-->
+                        <div class="jksq">
+                            <a href="#">
+                                <i class="jswd-ico"></i>
+                                技术问答
+                                <span>20000+</span>
+                            </a>
+                            <a href="#">
+                                <i class="wiki-ico"></i>
+                                Wiki
+                                <span>351</span>
+                            </a>
+                            <a href="#">
+                                <i class="sq-ico"></i>
+                                社群
+                                <span>7000+</span>
+                                </a>
+                            <a href="#">
+                                <i class="zyxz-ico"></i>
+                                资源下载
+                                <span>3000+</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav dis>
+            <!--登录/搜索/aap下载-->
+            <div class="icon-x">
+                <!--搜索图标-->
+                <span class="search-icon"></span>
+                <!--下载APP二维码图标-->
+                <span class="download-icon">
+                    <!--二维码-->
+                    <div class="submenu">
+                        <i class="top-triangle"></i>
+                        <img src="img/heade-rwm.png" alt=""/>
+                    </div>
+                </span>
+                <!--登录注册图标-->
+                <span class="login-icon">
+                    <dl class="submenu">
+                        <i class="top-triangle"></i>
+                        <dd>
+                            <a href="#" class="reg-btn">注册</a>
+                            |
+                            <a href="#" class="login-btn">登录</a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <i class="xxzx-icon"></i>
+                                学习中心
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <i class="grzy-icon"></i>
+                                个人主页
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <i class="xxtz-icon"></i>
+                                消息通知
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <i class="zhsz-icon"></i>
+                                账号设置
+                            </a>
+                        </dd>
+                    </dl>
+                </span>
+            </div>
+            <!--搜索-->
+            <div class="search">
+                <i class="cose-icon" id="cose"></i>
+                <i class="search-ico"></i>
+                <input id="web_search_header" placeholder="搜索课程、问答或Wiki" value="">
+                <div class="tagbox">
+                    <a href="#">Android</a>
+                    <a href="#">iOS</a>
+                    <a href="#">HTML5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--主体-->
+<article>
+    <div class="container">
+        <!--左侧内容-->
+        <div class="library-course">
+            <div class="con-nav">
+                <div class="library">
+                    <a href="#">
+                        <i></i>
+                        <span>课程库</span>
+                    </a>
+                </div>
+                <div class="course">
+                    <ul>
+                        <li>
+                            <div class="ls">
+                                <a href="#">移动开发</a>
+                                <div class="display-con" style="top: -48px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">应用开发</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Android</a>
+                                                <a href="#">iOS</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">游戏开发</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Cocos</a>
+                                                <a href="#">Unity3D</a>
+                                                <a href="#">SpriteKit 2D</a>
+                                                <a href="#">Unreal</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">常用框架</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Cordova</a>
+                                                <a href="#">React Native</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">前端开发</a>
+                                <div class="display-con" style="top: -86px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">前端基础</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">HTML</a>
+                                                <a href="#">CSS</a>
+                                                <a href="#">JavaScript</a>
+                                                <a href="#">HTML5</a>
+                                                <a href="#">CSS3</a>
+                                                <a href="#">技术前瞻</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">前端进阶</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Typescript</a>
+                                                <a href="#">前端安全</a>
+                                                <a href="#">项目实战</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">前端框架</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">jQuery</a>
+                                                <a href="#">jQuery UI</a>
+                                                <a href="#">jQuery Mobile</a>
+                                                <a href="#">Ext JS</a>
+                                                <a href="#">AngularJS</a>
+                                                <a href="#">ReactJS</a>
+                                                <a href="#">Bootstrap</a>
+                                                <a href="#">React Native</a>
+                                                <a href="#">Backbone</a>
+                                                <a href="#">Three.js</a>
+                                                <a href="#">MooTools</a>
+                                                <a href="#">Compass</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">HTML5游戏</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Canvas</a>
+                                                <a href="#">SVG</a>
+                                                <a href="#">WebGL</a>
+                                                <a href="#">Cocos2d-js</a>
+                                                <a href="#">CreateJS</a>
+                                                <a href="#">Flash</a>
+                                                <a href="#">Unreal</a>
+                                                <a href="#">Egret</a>
+                                                <a href="#">Phaser</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">后端开发</a>
+                                <div class="display-con" style="top: -123px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">Python</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Python 基础</a>
+                                                <a href="#">web2py</a>
+                                                <a href="#">Django</a>
+                                                <a href="#">Flask</a>
+                                                <a href="#">GUI</a>
+                                                <a href="#">数据挖掘与分析</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">PHP</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">PHP 基础</a>
+                                                <a href="#">YII</a>
+                                                <a href="#">ThinkPHP</a>
+                                                <a href="#">Laravel</a>
+                                                <a href="#">WordPress</a>
+                                                <a href="#">Phalcon</a>
+                                                <a href="#">Apache</a>
+                                                <a href="#">Facebook Hack</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">Node.js</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Node.js 基础</a>
+                                                <a href="#">express</a>
+                                                <a href="#">Meteor</a>
+                                                <a href="#">Hexo</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">ASP.NET</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">C#</a>
+                                                <a href="#">ASP.NET MVC</a>
+                                                <a href="#">Entity Framework</a>
+                                                <a href="#">WPF</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">J2EE</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">JSP</a>
+                                                <a href="#">Maven</a>
+                                                <a href="#">Spring</a>
+                                                <a href="#">SpringMVC</a>
+                                                <a href="#">Struts2</a>
+                                                <a href="#">MyBatis</a>
+                                                <a href="#">Hibernate</a>
+                                                <a href="#">Lucene</a>
+                                                <a href="#">常用框架</a>
+                                                <a href="#">项目实战</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">Ruby</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Ruby 基础</a>
+                                                <a href="#">Ruby on Rails</a>
+                                                <a href="#">Grape</a>
+                                                <a href="#">Ruby进阶</a>
+                                                <a href="#">RubyMine</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">Go</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Go 基础#</a>
+                                                <a href="#">Revel</a>
+                                                <a href="#">beego</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">Erlang</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Erlang 基础</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">基础知识</a>
+                                <div class="display-con" style="top: -160px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">基础语言</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">C</a>
+                                                <a href="#">C++</a>
+                                                <a href="#">Objective-C</a>
+                                                <a href="#">Swift</a>
+                                                <a href="#">C#</a>
+                                                <a href="#">Java</a>
+                                                <a href="#">Perl</a>
+                                                <a href="#">Shell</a>
+                                                <a href="#">Qt</a>
+                                                <a href="#">Scala</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">计算机基础</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">计算机组成原理</a>
+                                                <a href="#">网络工程</a>
+                                                <a href="#">Word</a>
+                                                <a href="#">Excel</a>
+                                                <a href="#">PowerPoint</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">开发基础</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">算法基础</a>
+                                                <a href="#">数据结构</a>
+                                                <a href="#">设计模式</a>
+                                                <a href="#">软件工程</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">开发工具</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Git/Github</a>
+                                                <a href="#">SVN</a>
+                                                <a href="#">VI</a>
+                                                <a href="#">Cocos2d-js</a>
+                                                <a href="#">CreateJS</a>
+                                                <a href="#">Flash</a>
+                                                <a href="#">Unreal</a>
+                                                <a href="#">Egret</a>
+                                                <a href="#">Phaser</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">开放标准</a></dt>
+                                            <dd>
+                                                <a href="#">OpenCL</a>
+                                                <a href="#">Open XML</a>
+                                                <a href="#">OpenGL/GLES</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">云计算&大数据</a>
+                                <div class="display-con" style="top: -197px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">云计算</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">OpenStack</a>
+                                                <a href="#">Docker</a>
+                                                <a href="#">CloudStack</a>
+                                                <a href="#">Windows Azure</a>
+                                                <a href="#">IaaS</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">大数据</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Hadoop</a>
+                                                <a href="#">Storm</a>
+                                                <a href="#">Hive</a>
+                                                <a href="#">Flume</a>
+                                                <a href="#">Kafka</a>
+                                                <a href="#">Zookeeper</a>
+                                                <a href="#">Hbase</a>
+                                                <a href="#">Spark</a>
+                                                <a href="#">信息检索</a>
+                                                <a href="#">数据分析</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">虚拟化</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">VMware</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">云平台</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">腾讯云</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">智能软件&物联网</a>
+                                <div class="display-con" style="top: -234px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">硬件架构</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">C51</a>
+                                                <a href="#">ARM</a>
+                                                <a href="#">Keil</a>
+                                                <a href="#">Cortex-M</a>
+                                                <a href="#">Cortex-A</a>
+                                                <a href="#">AVR</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">物联网操作系统</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">RTOS</a>
+                                                <a href="#">Android Wear</a>
+                                                <a href="#">Apple Watchkit</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">开源硬件平台</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Arduino</a>
+                                                <a href="#">树莓派</a>
+                                                <a href="#">mbed</a>
+                                                <a href="#">GoKit</a>
+                                                <a href="#">LeMaker Guitar</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">通信链接技术</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">无线WiFi</a>
+                                                <a href="#">移动通信</a>
+                                                <a href="#">蓝牙</a>
+                                                <a href="#">NFC</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">信息感知处理技术</a></dt>
+                                            <dd>
+                                                <a href="#">传感器</a>
+                                                <a href="#">数据挖掘</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">人机交互技术</a></dt>
+                                            <dd>
+                                                <a href="#">语音识别</a>
+                                                <a href="#">人脸识别</a>
+                                                <a href="#">手势识别</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">数据库</a>
+                                <div class="display-con" style="top: -271px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">SQL</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">MySQL</a>
+                                                <a href="#">SQL Server</a>
+                                                <a href="#">Oracle</a>
+                                                <a href="#">SQLite</a>
+                                                <a href="#">PostgreSQL</a>
+                                                <a href="#">DB2</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">NoSQL</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Cassandra</a>
+                                                <a href="#">Redis</a>
+                                                <a href="#">MongoDB</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">认证考试</a>
+                                <div class="display-con" style="top: -308px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">计算机等级考试</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">一级</a>
+                                                <a href="#">二级C</a>
+                                                <a href="#">二级Java</a>
+                                                <a href="#">二级C++</a>
+                                                <a href="#">网络工程师</a>
+                                                <a href="#">数据库工程师</a>
+                                                <a href="#">信息安全工程师</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">企业认证</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">思科认证</a>
+                                                <a href="#">Oracle认证</a>
+                                                <a href="#">Linux认证</a>
+                                                <a href="#">ARM认证</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">企业IT</a>
+                                <div class="display-con" style="top: -345px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">运维管理</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Shell</a>
+                                                <a href="#">自动化运维</a>
+                                                <a href="#">Nginx</a>
+                                                <a href="#">Apache</a>
+                                                <a href="#">运维监控</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">商业智能</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">FileMaker</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">操作系统</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Linux</a>
+                                                <a href="#">Windows</a>
+                                                <a href="#">Mac OS</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">企业服务</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">B2C</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ls">
+                                <a href="#">设计&产品&测试</a>
+                                <div class="display-con" style="top: -382px;">
+                                    <div style="width: 400px;">
+                                        <dl>
+                                            <dt><a href="#">设计基础</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">Photoshop</a>
+                                                <a href="#">Flash</a>
+                                                <a href="#">Illustrator</a>
+                                                <a href="#">Sketch</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">游戏设计</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">界面设计</a>
+                                                <a href="#">角色设计</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">产品经理</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">需求分析</a>
+                                                <a href="#">Axure</a>
+                                                <a href="#">项目实战</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">视觉设计</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">应用UI设计</a>
+                                                <a href="#">网页UI设计</a>
+                                                <a href="#">设计理论</a>
+                                                <a href="#">图形设计</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><a href="#">测试工具</a></dt>
+                                            <dd class="nr">
+                                                <a href="#">自动化测试</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="hdlist">
+                <li>
+                    <a href="#">
+                        <i class="zylj-ico"></i>
+                        职业路径图
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="zstx-ico"></i>
+                        知识体系图
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="xlkc-ico"></i>
+                        系列课程
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="kcbq-ico"></i>
+                        课程标签
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--右半部分内容-->
+        <div class="right-box">
+            <!--右边导航-->
+            <div class="warp">
+                <div class="sortMode">
+                    <h3>全部课程</h3>
+                    <!--最新-->
+                    <dl>
+                        <dt>
+                            <span class="type-title-one">最新</span>
+                            <i class="arrow"></i>
+                        </dt>
+                        <dd class="cc">
+                            <p><a href="#">最新</a></p>
+                            <p><a href="#">最热</a></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <span class="type-title-tow">课程类型</span>
+                            <i class="arrow"></i>
+                        </dt>
+                        <dd class="cc">
+                            <p class="lesson-detailed"><a href="#">VIP</a></p>
+                            <p class="lesson-detailed"><a href="#">免费</a></p>
+                            <p class="lesson-detailed"><a href="#">认证专享</a></p>
+                            <p class="lesson-all"><a href="#">全部</a></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <span class="type-title-tow">内容类型</span>
+                            <i class="arrow"></i>
+                        </dt>
+                        <dd class="cc">
+                            <p class="lesson-detailed"><a href="#">知识精讲</a></p>
+                            <p class="lesson-detailed"><a href="#">项目实战</a></p>
+                            <p class="lesson-all"><a href="#">全部</a></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <span class="type-title-three">难度等级</span>
+                            <i class="arrow"></i>
+                        </dt>
+                        <dd class="cc">
+                            <p class="level-one"><a href="#">初级</a></p>
+                            <p class="level-one"><a href="#">中级</a></p>
+                            <p class="level-one"><a href="#">高级</a></p>
+                            <p class="level-all"><a href="#">全部</a></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="previewMode">
+                    <ul>
+                        <li class="kuai-icon" id="kuai"><i class="icon"></i></li>
+                        <li class="list-icon" id="list"><i class="icon"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!--主体内容-->
+            <div class="main-con" style="z-index: 120">
+                <ul class="list-con">
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-right: 0;">
+                        <!--图片-->
+                        <div class="con-img">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                            </a>
+                            <div class="hide-ico">
+                                <i class="time-out"></i>
+                                <i class="xin-ico"></i>
+                            </div>
+                        </div>
+                        <!--文字内容-->
+                        <div class="con-text">
+                            <h2>
+                                <a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a>
+                            </h2>
+                            <p style="display: none">
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b8">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji" style="display: none">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="people" style="display: none">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-con2" style="display: none">
+                <ul class="list-con2">
+                    <li>
+                        <div class="lessonimg-box" style="float: left">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                                <!--隐藏图片-->
+                                <div class="lessonplay">
+                                    <i></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lesson-infor">
+                            <h2><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                            <p>
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b82">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="learn-number">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                     </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box" style="float: left">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                                <!--隐藏图片-->
+                                <div class="lessonplay">
+                                    <i></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lesson-infor">
+                            <h2><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                            <p>
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b82">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="learn-number">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box" style="float: left">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                                <!--隐藏图片-->
+                                <div class="lessonplay">
+                                    <i></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lesson-infor">
+                            <h2><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                            <p>
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b82">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="learn-number">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box" style="float: left">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                                <!--隐藏图片-->
+                                <div class="lessonplay">
+                                    <i></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lesson-infor">
+                            <h2><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                            <p>
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b82">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="learn-number">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box" style="float: left">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                                <!--隐藏图片-->
+                                <div class="lessonplay">
+                                    <i></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lesson-infor">
+                            <h2><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                            <p>
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b82">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="learn-number">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box" style="float: left">
+                            <a href="#">
+                                <img src="img/1.jpg" alt=""/>
+                                <!--隐藏图片-->
+                                <div class="lessonplay">
+                                    <i></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="lesson-infor">
+                            <h2><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                            <p>
+                                本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="class-hours">
+                                    <dl>
+                                        <dd class="mar-b82">
+                                            <i class="time-icon"></i>
+                                            <em>6课时
+                                                41分钟</em>
+                                        </dd>
+                                        <dd class="zhongji">
+                                            <i class="xinhao-icon"></i>
+                                            <em>初级</em>
+                                        </dd>
+                                    </dl>
+                                    <em class="learn-number">225人学习</em>
+                                    <div class="class-hours">
+                                        <div class="lessonicon-box">
+                                            <a href="#">
+                                                <img src="img/yun.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--换页-->
+            <div class="page-nav">
+                <ul class="pages">
+                    <li class="page-next">首页</li>
+                    <li class="page">上一页</li>
+                    <li class="page-number pgCurrent">1</li>
+                    <li class="page-number">2</li>
+                    <li class="page-number">3</li>
+                    <li class="page-number">4</li>
+                    <li class="page-number">5</li>
+                    <li class="page-number">6</li>
+                    <li class="page-number">7</li>
+                    <li class="thpoint">...</li>
+                    <li class="page">下一页</li>
+                    <li class="page-next">末页</li>
+                    <li class="thpoint-pagetotal">共 95 页</li>
+                    <li class="thpoint-pagenow" style="list-style: none"> 当前
+                        <input type="text" style="width:30px;height:15px;margin-left: 8px;
+                        margin-right: 5px;">
+                        页
+                    </li>
+                    <li class="panext-go">确定</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</article>
+<!--页脚-->
+<footer>
+    <div class="mar-t50">
+        <div class="jkinfor">
+            <div class="jk-logo">
+                <img src="img/jk-logo-footer.png" alt=""/>
+                <p>极客学院，编程是一种信仰！</p>
+            </div>
+            <dl>
+                <dt>职业学院</dt>
+                <dd><a href="#">Web前端工程师</a></dd>
+                <dd><a href="#">Python Web工程师</a></dd>
+                <dd><a href="#">Go语言工程师</a></dd>
+                <dd><a href="#">iOS工程师</a></dd>
+            </dl>
+            <dl>
+                <dt>会员课程</dt>
+                <dd><a href="#">课程库</a></dd>
+                <dd><a href="#">知识体系图</a></dd>
+                <dd><a href="#">职业路径图</a></dd>
+                <dd><a href="#">系列课程</a></dd>
+                <dd><a href="#">课程标签</a></dd>
+            </dl>
+            <dl>
+                <dt>极客社区</dt>
+                <dd><a href="#">技术问答</a></dd>
+                <dd><a href="#">Wiki</a></dd>
+                <dd><a href="#">资源下载</a></dd>
+                <dd><a href="#">社群</a></dd>
+            </dl>
+            <dl>
+                <dt>其他</dt>
+                <dd><a href="#">关于我们</a></dd>
+                <dd><a href="#">使用指南</a></dd>
+                <dd><a href="#">加入我们</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+                <dd><a href="#">友情链接</a></dd>
+            </dl>
+            <div class="jk-down">
+                <p class="hot-tel">服务热线:400-678-8266</p>
+                <div class="downCon down-ios">
+                    iPhone
+                </div>
+                <div class="downCon down-and">
+                    Android
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2013-2016
+            <strong>
+                <a href="#">jikexueyuan.com</a>
+            </strong>
+            All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+            <a href="#" class="down-wechat"></a>
+            <a href="#" class="down-sina"></a>
+            <a href="#" class="jk-Integrity">
+                <img src="img/cert.png" alt=""/>
+            </a>
+        </div>
+    </div>
+</footer>
+<!--右下固定定位-->
+<div class="gotop">
+    <span class="top" id="top"></span>
+    <a href="#" class="jk-app">
+        <div class="appewm"></div>
+    </a>
+    <a href="#" class="diaocha"></a>
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/script.js"></script>
+</html>
