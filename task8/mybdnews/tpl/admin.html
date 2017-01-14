@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台首页</title>
+    <!--响应式，约束缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 通知IE采用其支持的最新模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--引入bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/admin.css"/>
+</head>
+<body>
+            <nav class="nav navbar-inverse navbar-fixed-top　col-lg-12" role="navigation">
+                <div class="navbar-header">
+                    <!--项目名称，logo,品牌-->
+                    <a class="navbar-brand" href="#">新闻管理后台</a>
+                </div>
+                <!--导航区的表单-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">欢迎：admin</a></li>
+                    <li><a href="">退出</a></li>
+                    <li><a href="">消息
+                        <span class="badge">100</span></a>
+                    </li>
+                </ul>
+            </nav>
+     <div class="row main">
+         <div class="container-fluid">
+         <!--侧边栏-->
+            <div class="col-lg-2 sidebar">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascript:" id="articleList"><span class="glyphicon glyphicon-plus"></span>文章管理</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-10 content">
+                <div class="panel">
+                    <div class="panel-heading bg-success">
+                        <a id="add" href="add.html" class="btn btn-primary" style="margin-right: 10px;">添加文章</a>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped table-hover table-bordered table-responsive">
+                            <tr>
+                                <th>序号</th>
+                                <th>标题</th>
+                                <th>内容</th>
+                                <th>标注</th>
+                                <th>日期</th>
+                                <th>分类</th>
+                                <th>操作</th>
+                            </tr>
+                        </table>
+                        <!--分页-->
+                        <!--<ul class="pager">-->
+                            <!--<li><a href="#">上一页</a></li>-->
+                            <!--<li class="active"><a href="#">1</a></li>-->
+                            <!--<li><a href="#">2</a></li>-->
+                            <!--<li><a href="#">3</a></li>-->
+                            <!--<li><a href="#">4</a></li>-->
+                            <!--<li><a href="#">5</a></li>-->
+                            <!--<li><a href="#">下一页</a></li>-->
+                        <!--</ul>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/admin.js"></script>
+</html>

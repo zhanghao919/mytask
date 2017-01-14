@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Less编写公交站牌</title>
+    <link rel="stylesheet/less" type="text/css" href="less/index.less"/>
+    <script src="style/less.min.js"></script>
+</head>
+
+<body>
+<div class="bus-stop">
+    <div class="l-col col fl">
+        <div class="circle"></div>
+        <div class="b-line"></div>
+    </div>
+    <div class="r-col col fr">
+        <div class="circle"></div>
+    </div>
+    <!-- 站牌-->
+    <div class="bus-stop-plate">
+
+        <div class="content">
+            <div class="bus-num-con">
+                <div class="bus-num fl"><span class="num">5</span>路</div>
+                <h1 class="title fr">本站：余庄</h1>
+            </div>
+            <div class="way">
+
+                <div class="bus-way">
+                    <div class="bus-way-name">
+                        <p class="start">
+                            后璞
+                            <br /><span>(HOU PU)</span>
+                        </p>
+                        <span class="to">(开往)</span>
+                        <p class="end">
+                            昌盛
+                            <br /><span>(CHANG SHENG)</span>
+                        </p>
+                    </div>
+                    <p class="next-station">下一站:&nbsp;石庄</p>
+                </div>
+            </div>
+            <div class="way-des">
+                <ul>
+                    <li class="here f-num2"><span>后</span><span>璞</span></li>
+                    <li class="f-num2"><span>石</span><span>庄</span></li>
+                    <li class="f-num4"><span>人</span><span>民</span><span>银</span><span>行</span></li>
+                    <li class="f-num4"><span>人</span><span>民</span><span>公</span><span>园</span></li>
+                    <li class="f-num3"><span>小</span><span>西</span><span>门</span></li>
+                    <li class="f-num2"><span>昌</span><span>盛</span></li>
+                </ul>
+            </div>
+            <div class="time-const">
+                <p>首班:06:00&nbsp;&nbsp;末班:18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;票价 ： 3元</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="/bdnews/css/reset.css"/>
+    <link rel="stylesheet" href="/bdnews/css/style.css"/>
+    <script src="/bdnews/js/jquery-3.1.1.min.js"></script>
+    <script src="/bdnews/js/script.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="top">
+        <a href="#" class="bd-icon"></a>
+        <a href="#" class="gr-icon"></a>
+        <a href="#" class="logo"></a>
+        <a href="#" class="gz-icon"></a>
+        <a href="#" class="ss-icon"></a>
+    </div>
+    <div class="nav">
+        <ul class="nav1">
+            <li><a href="#" class="type">精选</a></li>
+            <li>
+                <b></b>
+                <a href="#" class="type">百家</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="#" class="type">本地</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="#" class="type">娱乐</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="#" class="type">社会</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="#" class="type">军事</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--主体-->
+<article>
+    <div class="con" id="con">
+        <ul class="con-img1">
+            <li class="list1">
+                <a href="#">
+                    <img src="./bdnews/img/timg.jpg" alt=""/>
+                </a>
+                <p>
+                    <span>法国一辆运钞车遭袭 黄金被抢</span>
+                </p>
+            </li>
+            <li class="list2" style="display: none">
+                <a href="#">
+                    <img src="./bdnews/img/timg%20(1).jpg" alt=""/>
+                </a>
+                <p>
+                    <span>与大熊猫齐名的国宝级动物</span>
+                </p>
+            </li>
+            <li class="list3" style="display: none">
+                <a href="#">
+                    <img src="./bdnews/img/timg%20(2).jpg" alt=""/>
+                </a>
+                <p>
+                    <span>啦啦啦啦啦啦</span>
+                </p>
+            </li>
+        </ul>
+        <ol class="con-ol">
+            <li class="cur"></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div class="container">
+    </div>
+</article>
+<!--页脚-->
+<footer>
+</footer>
+</body>
+<script>
+    var type = "精选"
+    listNewsByType(type);
+    $(".type").each(function () {
+        $(this).on('click',function () {
+            var typeText = $(this).text();
+            listNewsByType(typeText);
+        });
+    });
+
+    function listNewsByType(type){
+        $.ajax({
+            type:'GET',
+            url:'/listNewsByType',
+            data:{"typeText":type},
+            dataType:"json",
+            success:function(data){
+                $(".container").empty();
+                //在回调函数中将后台发过来的数据渲染到页面
+                data.forEach(function(obj,index){
+                    var newsDiv = document.createElement("div");
+                    newsDiv.className = 'index-list-item';
+                    var newsImageDiv = document.createElement("div");
+                    newsImageDiv.className = 'index-list-image';
+                    //创建图文列表
+                    var listItem =  $('<div>').addClass("index-list-item");
+                    listItem.append($('<div>').addClass("index-list-image")
+                            .append($('<img>').attr("src","../"+obj['news_Thumbnail'].slice(9))));
+                    listItem .append($('<div>').addClass('index-list-main-text').append(
+                            $('<div>').addClass("index-list-main-title").text(obj['news_title'])
+                    ).append(
+                            $('<div>').addClass("index-list-main-time")
+                                    .append($('<b>').addClass('tip-time').text(obj['post_time']))
+                                    .append($('<b>').addClass('tip-hot').text(obj['news_mark'])
+                            )));
+                    $(".container").append($("<a>").attr("href","").append(listItem));
+                });
+            }
+        });
+    }
+
+</script>
+</html>

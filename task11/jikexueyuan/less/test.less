@@ -1,0 +1,125 @@
+@color-hui:#e4e4e4;
+@color-green:#35b558;
+@color-black:#808080;
+@color-white:#eeeeee;//以上变量
+@font-size:12px;
+.mar-t50{
+  width: 100%;
+  min-width: 1000px;
+  margin: 50px auto 0;
+  background: #fff;
+  border-top: 1px solid @color-hui;
+  .jkinfor{
+    width: 776px;
+    height: 190px;
+    margin: 0 auto;
+    padding-left: 224px;
+    padding-top: 25px;
+    position: relative;
+    .jk-logo{
+      width: 160px;
+      position: absolute;
+      left: 0;
+      top: 25px;
+      img{
+        display: block;
+        width: 109px;
+        height: 40px;
+      }
+      p{
+        color: @color-black;
+        margin-top: 20px;
+      }
+    }
+    dl{
+      float: left;
+      width: 135px;
+      color: @color-black;
+      dt{
+        font-size: @font-size+2;
+        line-height: 30px;
+      }
+      dd{
+        line-height: 30px;
+        a{
+          color: #999;
+          :hover{
+            color: @color-green;
+          }
+        }
+      }
+    }
+    .jk-down{
+      display: inline-block;
+      width: 175px;
+      text-align: left;
+      position: absolute;
+      right: 0;
+      top:25px;
+      .hot-tel{
+        color: @color-black;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .downCon{
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        border: 1px solid @color-white;
+        margin-bottom: 10px;
+        line-height: 30px;
+        color: @color-black;
+        font-size: @font-size+1;
+        padding-left: 40px;
+      }
+      .down-and{
+        background:url("../image/icon-down-and.png") no-repeat;
+        background-size: 30px 30px;
+      }
+      .down-ios {
+        background: url("../image/icon-down-ios.png") no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+  }
+  .copyright{
+    width: 1000px;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+    strong{
+      a{
+        color: #999;
+        :hover{
+          color:@color-green;
+        }
+      }
+    }
+    .down-wechat{
+      display: block;
+      width: 20px;
+      height: 15px;
+      background: url("../image/icon-down-wechat.png") no-repeat 0 0;
+      background-size: 18px 15px;
+      float: right;
+    }
+    .down-sina{
+      display: block;
+      width: 20px;
+      height: 15px;
+      background: url("../image/icon-down-sina.png") no-repeat 0 0;
+      background-size: 20px 15px;
+      float: right;
+      margin-right: 10px;
+    }
+    .jk-Integrity{
+      display: block;
+      margin: 15px auto 0;
+      img{
+        width: 60px;
+      }
+    }
+  }
+}
